@@ -10,8 +10,7 @@ MAINTAINER jpatel@pivotal.io
 #
 # Version 0.1
 #########################
-RUN apt-get install -y apt-utils
-RUN apt-get update -y;apt-get -y upgrade; apt-get autoremove ; apt-get clean
+RUN apt-get update -y;apt-get install -y --no-install-recommends apt-utils;apt-get -y upgrade; apt-get autoremove ; apt-get clean
 RUN apt-get install -y python python-pip postgresql nodejs-legacy npm vim
 RUN pip install --upgrade pip
 RUN pip install paramiko
