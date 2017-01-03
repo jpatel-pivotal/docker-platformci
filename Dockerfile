@@ -12,6 +12,7 @@ MAINTAINER jpatel@pivotal.io
 #########################
 RUN apt-get update -y;apt-get -y upgrade; apt-get autoremove ; apt-get clean
 RUN apt-get install -y python python-pip postgresql nodejs-legacy npm vim
+RUN pip install --upgrade pip
 RUN pip install paramiko
 RUN pip install --upgrade google-api-python-client
 RUN npm install -g azure-cli
