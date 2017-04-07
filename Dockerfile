@@ -15,7 +15,8 @@ RUN apt-get install -y python python-pip postgresql nodejs-legacy npm vim
 RUN pip install --upgrade pip
 RUN pip install paramiko
 RUN pip install --upgrade google-api-python-client
-RUN pip install pgdb
+RUN pip install psycopg2
+RUN pip install numpy
 RUN npm install -g azure-cli
 RUN mkdir -p ~/.azure/
 RUN echo '{"telemetry":false}' > ~/.azure/telemtry.json
