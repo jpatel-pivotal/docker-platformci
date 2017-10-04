@@ -11,3 +11,5 @@ This feature set is currently comprised of
 - Node.js (for azure tools)
 - Azure CLI Tools
 - Postgres Client
+- Postfix and Mailutils (for sending email)
+- Python Matplotlib (for plotting graphs)
